@@ -1,46 +1,64 @@
-# Instal Package via UPM
+# Unity Firebase UPM Packages
 
-Add this line to UPM Window for installing invidual Package
+Firebase SDK packages repackaged for Unity Package Manager (UPM) compatibility.
 
-## ExternalDependencyManager
+**Note:** tvOS plugins have been removed to prevent iOS/tvOS plugin collision errors during Android builds.
 
-	https://github.com/aqphungngoc/unity-firebase-app.git?path=ExternalDependencyManager#{release_version}
+## Installation via UPM
 
-## FirebaseApp
+Add packages via the Unity Package Manager window or directly to `Packages/manifest.json`.
 
-	https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseApp#{release_version}
+### Individual Packages
 
-## FirebaseAnalytics
+#### ExternalDependencyManager
+```
+https://github.com/LaCreArthur/unity-firebase-app.git?path=ExternalDependencyManager#12.10.1
+```
 
-	https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseAnalytics#{release_version}
+#### FirebaseApp
+```
+https://github.com/LaCreArthur/unity-firebase-app.git?path=FirebaseApp#12.10.1
+```
 
-## FirebaseCrashlytics
+#### FirebaseAnalytics
+```
+https://github.com/LaCreArthur/unity-firebase-app.git?path=FirebaseAnalytics#12.10.1
+```
 
-	https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseCrashlytics#{release_version}
+#### FirebaseCrashlytics
+```
+https://github.com/LaCreArthur/unity-firebase-app.git?path=FirebaseCrashlytics#12.10.1
+```
 
-## FirebaseRemoteConfig
+#### FirebaseRemoteConfig
+```
+https://github.com/LaCreArthur/unity-firebase-app.git?path=FirebaseRemoteConfig#12.10.1
+```
 
-	https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseRemoteConfig#{release_version}
- 
-## Google.play.core
+#### Google Play Core
+```
+https://github.com/LaCreArthur/unity-firebase-app.git?path=com.google.play.core#12.10.1
+```
 
-	https://github.com/aqphungngoc/unity-firebase-app.git?path=com.google.play.core#{release_version}
+#### Google Play Common
+```
+https://github.com/LaCreArthur/unity-firebase-app.git?path=com.google.play.common#12.10.1
+```
 
-## Google.play.common
+#### Google Play Review
+```
+https://github.com/LaCreArthur/unity-firebase-app.git?path=com.google.play.review#12.10.1
+```
 
-	https://github.com/aqphungngoc/unity-firebase-app.git?path=com.google.play.common#{release_version}
+### manifest.json (recommended order)
 
-## Google.play.review
-
-	https://github.com/aqphungngoc/unity-firebase-app.git?path=com.google.play.review#{release_version}
-
-## Or simply add these line (should follow this order) to file Packages/Manifest.json
-
-    "com.google.external-dependency-manager": "https://github.com/aqphungngoc/unity-firebase-app.git?path=ExternalDependencyManager#1.1.2",
-    "com.google.firebase.app": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseApp#1.1.2",
-    "com.google.firebase.analytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseAnalytics#1.1.2",
-    "com.google.firebase.crashlytics": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseCrashlytics#1.1.2",
-    "com.google.firebase.remote-config": "https://github.com/aqphungngoc/unity-firebase-app.git?path=FirebaseRemoteConfig#1.1.2",
-    "com.google.play.common": "https://github.com/aqphungngoc/unity-firebase-app.git?path=com.google.play.common#1.1.2",
-    "com.google.play.core": "https://github.com/aqphungngoc/unity-firebase-app.git?path=com.google.play.core#1.1.2",
-    "com.google.play.review": "https://github.com/aqphungngoc/unity-firebase-app.git?path=com.google.play.review#1.1.2",
+```json
+"com.google.external-dependency-manager": "https://github.com/LaCreArthur/unity-firebase-app.git?path=ExternalDependencyManager#12.10.1",
+"com.google.firebase.app": "https://github.com/LaCreArthur/unity-firebase-app.git?path=FirebaseApp#12.10.1",
+"com.google.firebase.analytics": "https://github.com/LaCreArthur/unity-firebase-app.git?path=FirebaseAnalytics#12.10.1",
+"com.google.firebase.crashlytics": "https://github.com/LaCreArthur/unity-firebase-app.git?path=FirebaseCrashlytics#12.10.1",
+"com.google.firebase.remote-config": "https://github.com/LaCreArthur/unity-firebase-app.git?path=FirebaseRemoteConfig#12.10.1",
+"com.google.play.common": "https://github.com/LaCreArthur/unity-firebase-app.git?path=com.google.play.common#12.10.1",
+"com.google.play.core": "https://github.com/LaCreArthur/unity-firebase-app.git?path=com.google.play.core#12.10.1",
+"com.google.play.review": "https://github.com/LaCreArthur/unity-firebase-app.git?path=com.google.play.review#12.10.1"
+```
